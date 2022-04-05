@@ -1,0 +1,55 @@
+.logo{
+    background-color: black;
+    margin-top: 1%;
+    padding:1%;
+    margin-right: 82%;
+
+}
+#nom_logo{
+    background-color: rgb(15, 15, 15);
+    color: aliceblue;
+    margin-top: 1%;
+    padding:1%;
+    margin-right: 82%;
+}
+
+.animales{
+    background-color: rgb(0, 0, 0);
+    padding: 1%;
+    
+    margin-top: -22%;
+    margin-left: 20%;
+    margin-right: 5%;
+  
+}
+.barra_animales{
+    background-color: rgb(0, 0, 0);
+    margin-top: -3%;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+.parrafo{
+    color: rgb(255, 255, 255);
+    background-color: rgb(0, 0, 0);
+}
+
+.carr{
+    padding-top: 1%;
+    background-color:rgb(60, 61, 61);
+    padding-left: 4%;
+    margin-left: 2%;
+    margin-right: 2%;
+}
+.img_carrucel{
+      margin-left: 15%;
+      padding-top: 0%;
+      text-align: center;
+}
+#carrucel1{
+    margin:12%;
+}
+<<<<<<< HEAD
+
+=======
+>>>>>>> leandro
