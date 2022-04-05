@@ -48,8 +48,20 @@
 }
 #carrucel1{
     margin:12%;
+
 }
+
+.container_inferior{
+   background-color: rgb(0, 0, 0);
+   margin: 2%;
+   color: azure;
+   padding-left: -12%;/*quienes somos*/
+  
+}
+
 <<<<<<< HEAD
 
 =======
 >>>>>>> leandro
+/*estilos sergio*/
+
