@@ -24,44 +24,39 @@
 }
 .barra_animales{
     background-color: rgb(0, 0, 0);
-    margin-top: -3%;
-    margin-left: 20%;
-    margin-right: 20%;
+    padding:1 %;
+    padding-top: 1%;
+    margin-top: -5%;
+    margin-left: 25%;
+    margin-right: 23%;
 }
 
 .parrafo{
-    color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
     background-color: rgb(0, 0, 0);
 }
 
 .carr{
-    padding-top: 1%;
-    background-color:rgb(60, 61, 61);
-    padding-left: 4%;
-    margin-left: 2%;
-    margin-right: 2%;
+    background-color: black;
+    margin-top: 2%;
+    margin: 1%;
+
 }
 .img_carrucel{
-      margin-left: 15%;
-      padding-top: 0%;
-      text-align: center;
+      margin-left: 17%;
+      margin-top: 5%;
+      
 }
-#carrucel1{
-    margin:12%;
 
-}
 
 .container_inferior{
-   background-color: rgb(0, 0, 0);
-   margin: 2%;
-   color: azure;
-   padding-left: -12%;/*quienes somos*/
+  background-color: black;
+  text-align: center;
+  color: beige;
+  padding-top: 2%;
   
 }
 
-<<<<<<< HEAD
 
-=======
->>>>>>> leandro
 /*estilos sergio*/
 
