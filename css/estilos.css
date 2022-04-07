@@ -49,7 +49,17 @@
 #carrucel1{
     margin:12%;
 }
-<<<<<<< HEAD
 
-=======
->>>>>>> leandro
+/* estilos sergio */
+.cabecera{
+    height: 25px;
+}
+
+.logos{
+    background-color: black;
+    margin-top: 1%;
+    padding:1%;
+    margin-right: 82%;
+    height: 25px;
+
+}
