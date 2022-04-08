@@ -22,12 +22,6 @@
     margin-right: 5%;
   
 }
-.barra_animales{
-    background-color: rgb(0, 0, 0);
-    margin-top: -3%;
-    margin-left: 20%;
-    margin-right: 20%;
-}
 
 .parrafo{
     color: rgb(255, 255, 255);
@@ -53,7 +47,7 @@
 /* estilos sergio */
 
 .imgventas{
-    height: 150px;
+    height: 100px;
 }
 
 .logos{
@@ -64,3 +58,13 @@
     height: 25px;
 
 }
+
+.barra_home{
+    margin: -1%;
+  }
+.barra_animales{
+    padding: -1%;
+  }
+.namvar{
+    background-color: aqua;
+  }
