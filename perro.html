@@ -14,20 +14,18 @@
 </head>
 
 <body>
-    <div class="contenedor">
-        <div clas="container">
-            <div class="row">
-
-                <div class="barra_home" class="col">
-                    <img src="Img/Captura de pantalla 2022-04-05 034616.png" height="100" width="90">
-                    <img class="container" src="Img/imagen_home.png" height="115" width="100">
-                </div>
+    <div clas="container-fluid">
+        <div class="row ">
+            <div class="col-12">
+                <img src="Img/perrioMejorado.svg" style="max-width: 100%;">
+            </div>
+        </div>
                 <div>
                     <nav class="navbar navbar-dark bg-dark">
                         <div class="container">
                             <div clas="namvar" class="barra_animales">
                                 <div class="container">
-
+                                    <a class="btn btn-dark" href="index.html">🏠Home</a>
                                     <button type="button" class="btn btn-dark">Roedores</button>-</button>
                                     <button type="button" class="btn btn-dark">Gatos</button>-</button>
                                     <button type="button" class="btn btn-dark">Perros</button>-</button>
@@ -50,7 +48,10 @@
                                             <a class="dropdown-item" href="#"> vestimenta</a>
                                             <a class="dropdown-item" href="#">juguetes</a>
                                             <a class="dropdown-item" href="#">antiparacitarios</a>
+                                        
                                         </div>
+                                        <button type="button" class="btn btn-dark">🛒compras</button>-</button>
+                                        <button type="button" class="btn btn-dark">👤Perfil</button>-</button>
                                     </div>
                                 </div>
                             </div>
@@ -59,9 +60,9 @@
                             </li>
                             </ul>
                             <form class="d-flex">
-                                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                                <input class="form-control me-2" type="Buscar" placeholder="Buscar" aria-label="Buscar">
 
-                                <button class="btn btn-outline-success" type="submit">Search</button>
+                                <button class="btn btn-outline-success" type="submit">Buscar</button>
                             </form>
                     </nav>
                 </div>
@@ -76,55 +77,77 @@
 
     </div>
     <div class="container-fluid">
-        <div class="row imgventas">
-            <div class="col-sm-4"> <img src="img/collar.png" class="img-fluid pt-3" alt="collar de perro">
-                <p class=" text-center"> stock 5</p>
-            </div>
-            <div class="col-sm-4"> <img src="img/casaperro.png" class="img-fluid pt-3" alt="casa de perro">
-                <p class=" text-center"> stock 2</p>
-            </div>
-            <div class="col-sm-4"> <img src="img/shampoo.png" class="img-fluid pt-3" alt="shampoo de perro">
-                <p class=" text-center"> stock 4</p>
-            </div>
-
-            <div class="col-sm-4"> <img src="img/collar.png" class="img-fluid pt-3" alt="collar de perro">
-                <p class=" text-center"> stock 5</p>
-            </div>
-            <div class="col-sm-4"> <img src="img/casaperro.png" class="img-fluid pt-3" alt="casa de perro">
-                <p class=" text-center"> stock 2</p>
-            </div>
-            <div class="col-sm-4"> <img src="img/shampoo.png" class="img-fluid pt-3" alt="shampoo de perro">
-                <p class=" text-center"> stock 4</p>
-            </div>
-
-
-            <p class="container-fluid">
-
-                <div class="container p-5 my-5 bg-dark text-white">
-                    <div class="row">
-            
-                        <div class="col-sm-3"><button type="button" class="btn btn-link">
-                                <h4>@MyPets</h4>
-                            </button>
-                            <p>encuentranos en instagram somos una tienda muy activa y encontraras de todo para tú
-                                mascota</p>
-                        </div>
-                        <div class="col-sm-3"><button type="button" class="btn btn-link">
-                                <h4>www.soporte.cl</h4>
-                            </button>
-                            <p>el soporte necesario para tus compras en línea errores de página</p>
-                        </div>
-                        <div class="col-sm-3"> <button type="button" class="btn btn-success">suscribete</button>
-                            <p>no solo tendras beneficios de descuentos sino aydaras a una fundación sin fines de lucro
-                            </p>
-                        </div>
-                        <div class="col-sm-3"><button type="button" class="btn btn-info">¿Quiénes somos?</button>
-                            <p>somos una empresa que vende y ayuda a el cuidado y entretenció...presionar para más info
-                            </p>
-                        </div>
+        <div class="row row-cols-1 row-cols-md-3 g-4 pt-3">
+            <div class="col">
+                <div class="card">
+                    <img src="img/collar.png" class="card-img-top" alt="collar de perro">
+                    <div class="card-body">
+                        <h5 class="card-title">Collar</h5>
+                        <p class="card-text">Este producto es un collar para perros pequeños.</p>
                     </div>
                 </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <img src="img/casaperro.png" class="card-img-top" alt="casa de perro">
+                    <div class="card-body">
+                        <h5 class="card-title">Casa de perro</h5>
+                        <p class="card-text">Este producto es una casa para perros de perro</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <img src="img/shampoo.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Shampoo</h5>
+                        <p class="card-text">Producto para el lavado del cabello del can</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <img src="img/casaperro.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to
+                            additional content. This content is a little bit longer.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <img src="img/shampoo.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to
+                            additional content. This content is a little bit longer.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid pt-2">
+        <div class="row pt-2  bg-dark text-white">
+            <div class="col-sm-3"><button type="button" class="btn btn-link">
+                    <h4>@MyPets</h4>
+                </button>
+                <p>encuentranos en instagram somos una tienda muy activa y encontraras de todo para tú
+                    mascota</p>
+            </div>
+            <div class="col-sm-3"><button type="button" class="btn btn-link">
+                    <h4>www.soporte.cl</h4>
+                </button>
+                <p>el soporte necesario para tus compras en línea errores de página</p>
+            </div>
+            <div class="col-sm-3"> <button type="button" class="btn btn-success">suscribete</button>
+                <p>no solo tendras beneficios de descuentos sino aydaras a una fundación sin fines de lucro
                 </p>
+            </div>
+            <div class="col-sm-3"><button type="button" class="btn btn-info">¿Quiénes somos?</button>
+                <p>somos una empresa que vende y ayuda a el cuidado y entretenció...presionar para más info
+                </p>
+            </div>
 
         </div>
     </div>
