@@ -25,6 +25,7 @@ canasta y la barra de animales*/
     margin-right: 5%;
   
 }
+<<<<<<< HEAD
 .barra_animales{
     background-color: rgb(0, 0, 0);
     padding:1%;
@@ -33,6 +34,9 @@ canasta y la barra de animales*/
     margin-left: 25%;
     margin-right: 23%;
 }
+=======
+
+>>>>>>> sergio
 
 .parrafo{
     text-align: center;
@@ -78,5 +82,33 @@ así quedara en buena posición*/
     margin-right: 2%;
     background-color: rgb(0, 0, 0);
 }
+<<<<<<< HEAD
 /*estilos sergio*/
 
+=======
+
+/* estilos sergio */
+
+.imgventas{
+    height: 100px;
+}
+
+.logos{
+    background-color: black;
+    margin-top: 1%;
+    padding:1%;
+    margin-right: 82%;
+    height: 25px;
+
+}
+
+.barra_home{
+    margin: -1%;
+  }
+.barra_animales{
+    padding: -1%;
+  }
+.namvar{
+    background-color: aqua;
+  }
+>>>>>>> sergio
