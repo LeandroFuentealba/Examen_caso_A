@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .barra_home{
   margin: -1%;
 }
@@ -11,4 +12,19 @@
 .logo
 {
   margin-left: -10%;
+=======
+.barra_home{
+  margin: -1%;
+}
+.barra_animales{
+  padding: -1%;
+}
+.namvar{
+  background-color: aqua;
+}
+
+.logo
+{
+  margin-left: -10%;
+>>>>>>> leandro
 }
