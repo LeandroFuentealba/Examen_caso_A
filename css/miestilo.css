@@ -2,13 +2,16 @@
   margin: -1%;
 }
 .barra_animales{
-  padding: -1%;
+  margin-left: -1%;
 }
 .namvar{
-  background-color: aqua;
+  background-color: rgb(38, 229, 229);
 }
 
 .logo
 {
-  margin-left: -10%;
+  margin-left: 1%;
+}
+.busqueda{
+  margin-left: 25%;
 }
