@@ -113,6 +113,7 @@ así quedara en buena posición*/
   }
 >>>>>>> sergio
 
+/*Estilos elvis*/
 .carousel-item {
     position: relative;
     display: none;
@@ -138,3 +139,7 @@ así quedara en buena posición*/
     text-align: center;
   }
   
+  .sombratexto
+  {
+      color: white; text-shadow: black 0.1em 0.1em 0.2em
+    }
