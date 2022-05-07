@@ -12,6 +12,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <!--carpeta css-->
     <link rel="stylesheet" href="css/miestilo.css">
+    <link rel="stylesheet"  href="https://fonts.googleapis.com/css?family=Tangerine">
 </head>
 <body class="fondo_del_formulario">
     <div class="container-fluid">
@@ -81,7 +82,7 @@
                             <h2>DATOS DE TARJETA</h2>
                             <!--numero de tarjeta-->
                             <label for="n° tarjeta" class="campo">n° tarjeta</label>
-                            <input type="number" min="100000000" max="9999999999" class="campo"
+                            <input type="number" maxlength="16" min="0000000000000000" max="9999999999999999" class="campo"
                                 placeholder="ingrese numero de tarjeta" id="txtedad" name="nro_tarjeta" required>
                             <!--fecha de vencimiento-->
                             <label for="fecha" class="label">fecha de caducidad</label>
@@ -101,7 +102,24 @@
                 </div>
             </div>
             <div class="col-2"></div>
+            <!--boton de pantalla emergente-->
+            <div class="overlay active" >
+                <div class="popup">
+                    <a href="#" id="boton-cerrar-popup" class="botn-cerrar-popup"><i class="fas fa-times"></i></a>
+                    <h3>suscribete</h3>
+                    <h4>y se miembro de nuestra comunidad</h4>
+                    <form action="">
+                        <div class="contenedor-inputs">
+                            <input type="text " placeholder="nombre">
+                            <input type="email " placeholder="correo">
+                        </div>
+                        <input type="submit" class="btn-submit" value="suscribirse">
+                    </form>
+                </div>
+               
+            </div>
         </div>
     </div>
+    <script src="popup.js"></script>
 </body>
 </html>
