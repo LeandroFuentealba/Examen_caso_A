@@ -17,9 +17,9 @@
     <div class="container-fluid">
         <div clas="row">
             <div class="col-1"> <a class="btn btn-dark" href="index.html">🏠Home</a></div>
-            
+
         </div>
-        
+
         <div class="row">
             <div class="col-2"></div>
             <div class="col-8">
@@ -27,34 +27,75 @@
                     <section class="forma_registro">
                         <div class="titulo_formulario">
                             <h1>FORMULARIO DE SUBCRIPCIÓN</h1>
-                            <p > ingrese su RUT </p>
-                            <input class="controles" type="text" name="nombres" placeholder=" ejemplo 18.806.162-7">
-                            <p> nombre</p>
-                            <input class="controles" type="text" name="nombres" placeholder="ingrese nombres">
-                            <p>apellidos</p>
-                            <input class="controles" type="text" name="nombres" placeholder="ingrese apellidos">
-                            <p> fecha de nacimiento</p>
-                            <input class="controles" type="text" name="nombres" placeholder="12/junio/1995">
-                            <p> correo electonico</p>
-                            <input class="controles" type="text" name="nombres" placeholder="ingrese correo electronico">
-                            <p>ingrese clave</p>
-                            <input class="controles" type="password" name="nombres" placeholder="1234567">
+                            <!--rut-->
+                            <label for="rut" class="label">rut</label>
+                            <input class="label" maxlength="10" id="itrut" type="text" name="rut" placeholder=" ejemplo 18.806.162-7" required="lllllll">
+                            <!--nombre-->
+                            <label for="nombre" class="label">nombre</label>
+                            <input class="campo" type="text" minlength="3" name="nombres" placeholder="ingrese nombres" required>
+                            <!--apellido-->
+                            <label for="apellido" class="label">apellido</label>
+                            <input class="campo" type="text" name="nombres" placeholder="ingrese apellidos" required>
+                            <!--edad-->
+                            <label for="edad" class="campo">Edad:</label>
+                            <input type="number" min="18" max="120" class="campo" placeholder="ingrese edad"
+                                id="txtedad" name="edad" required>
+                            <!--sexo-->
+                                <label class="label" for="sex">Sexo:</label>
+                            <div class="campo">
+                                <input type="radio" class="form-check-input" id="radio1" name="sex" value="fem"
+                                    checked>Femenino
+                                <label class="label" for="sex"></label>
+                            </div>
+                            <div class="label">
+                                <input type="radio" class="form-check-input" id="radio1" name="sex"
+                                    value="mas">Masculino
+                                <label class="label" for="sex"></label>
+                            </div>
+                            <!--comuna-->
+                            <div>
+                                <label   class="campo" for="comuna">Comuna:</label>
+                                <select id="selcomuna" class="form-select" name="comuna"  required>
+                                    <option value="ccp">Concepción</option>
+                                    <option value="chi" >Chiguayante</option>
+                                    <option value="hual">Hualpen</option>
+                                    <option value="cor">Coronel</option>
+                                    <option value="flor"> Florida</option>
+                                    <option value="hualq">Hualqui</option>
+                                    <option value="lota">Lota</option>
+                                    <option value="pen">Penco</option>
+                                    <option value="san"selected>San Pedro de la Paz</option>
+                                    <option value="santa">Santa Juana</option>
+                                    <option value="tal">Talcahuano</option>
+                                    <option value="tom">Tomé</option>
+                                </select>
+
+                            </div>
+                            <!--correo-->
+                            <label for="correo" class="label">correo electronico</label>
+                            <input class="campo" type="text" name="nombres" placeholder=" ejm: leandro@gmail.com"  required>
+                            <label for="clave" class="label">ingrese clave</label>
+                            <input class="campo" type="password" name="nombres" placeholder="1234567"  required>
                             <br>
+                            <!--datos de tarjeta-->
                             <h2>DATOS DE TARJETA</h2>
-                            <p>número de tarjeta</p>
-                            <input class="controles" type="password" name="nombres" placeholder="numero de tarjeta">
-                            <p>fecha de caducidad</p>
-                            <input class="controles" type="text" name="nombres" placeholder="fecha de caducidad">
-                            <p>CW</p>
-                            <input class="controles" type="password" name="nombres" placeholder="CW">
-                            
-                            
-                            <a button type="button" class="btn btn-danger" href="logearse.html">suscribete</a>
+                            <!--numero de tarjeta-->
+                            <label for="n° tarjeta" class="campo">n° tarjeta</label>
+                            <input type="number" min="100000000" max="9999999999" class="campo"
+                                placeholder="ingrese numero de tarjeta" id="txtedad" name="nro_tarjeta" required>
+                            <!--fecha de vencimiento-->
+                            <label for="fecha" class="label">fecha de caducidad</label>
+                            <input class="campo" type="text" name="nombres" placeholder="fecha de caducidad"  required>
+                            <!--cw-->
+                            <label for="CW" class="label">CW</label>
+                            <input class="campo" type="password" name="nombres" placeholder="CW"  required>
+
+                            <input type="submit" id="enviar" value="suscribirse" class="boton">
+
                             <!--FALTA lnkearlo a alguna otra venta que diga que ya esta  suscrito-->
 
-                            <p>Estoy de acuerdo con los  <a href="#">Terminos y Condiciones</a></p>
+                            <p>Estoy de acuerdo con los <a href="#">Terminos y Condiciones</a></p>
                         </div>
-                       
                     </section>
 
                 </div>
