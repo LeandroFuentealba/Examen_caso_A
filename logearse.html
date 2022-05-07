@@ -29,13 +29,13 @@
                             <h1>FORMULARIO DE SUBCRIPCIÓN</h1>
                             <!--rut-->
                             <label for="rut" class="label">rut</label>
-                            <input class="label" maxlength="10" id="itrut" type="text" name="rut" placeholder=" ejemplo 18.806.162-7" required="lllllll">
+                            <input class="label" maxlength="10" id="itrut" type="number" name="rut" placeholder=" ejemplo 18.806.162-7" required>
                             <!--nombre-->
                             <label for="nombre" class="label">nombre</label>
                             <input class="campo" type="text" minlength="3" name="nombres" placeholder="ingrese nombres" required>
                             <!--apellido-->
                             <label for="apellido" class="label">apellido</label>
-                            <input class="campo" type="text" name="nombres" placeholder="ingrese apellidos" required>
+                            <input class="campo"  minlength="3" type="text" name="nombres" placeholder="ingrese apellidos" required>
                             <!--edad-->
                             <label for="edad" class="campo">Edad:</label>
                             <input type="number" min="18" max="120" class="campo" placeholder="ingrese edad"
@@ -73,19 +73,19 @@
                             </div>
                             <!--correo-->
                             <label for="correo" class="label">correo electronico</label>
-                            <input class="campo" type="text" name="nombres" placeholder=" ejm: leandro@gmail.com"  required>
+                            <input class="campo" type="email" name="nombres" placeholder=" ejm: leandro@gmail.com"  required>
                             <label for="clave" class="label">ingrese clave</label>
-                            <input class="campo" type="password" name="nombres" placeholder="1234567"  required>
+                            <input class="campo" type="password" type="number" name="nombres" placeholder="1234567"  required>
                             <br>
                             <!--datos de tarjeta-->
                             <h2>DATOS DE TARJETA</h2>
                             <!--numero de tarjeta-->
                             <label for="n° tarjeta" class="campo">n° tarjeta</label>
-                            <input type="number" min="100000000" max="9999999999" class="campo"
-                                placeholder="ingrese numero de tarjeta" id="txtedad" name="nro_tarjeta" required>
+                            <input type="number"  maxlength="16" class="campo"
+                                placeholder="ingrese numero de tarjeta" id="txtnumber" name="nro_tarjeta" required>
                             <!--fecha de vencimiento-->
                             <label for="fecha" class="label">fecha de caducidad</label>
-                            <input class="campo" type="text" name="nombres" placeholder="fecha de caducidad"  required>
+                            <input class="campo" type="date"  name="nombres" placeholder="06/25"  required>
                             <!--cw-->
                             <label for="CW" class="label">CW</label>
                             <input class="campo" type="password" name="nombres" placeholder="CW"  required>
