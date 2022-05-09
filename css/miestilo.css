@@ -123,6 +123,8 @@ ingresados en este formulario  para logearse como usuario o dueño de la tienda*
   padding: 20px;
   text-align:center;
   width: 600px;
+
+  transition: .3s ease all;
   opacity: 0;
 }
 .popup .botn-cerrar-popup{
