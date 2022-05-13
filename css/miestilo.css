@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 .barra_home{
   margin: -1%;
 }
@@ -12,7 +12,7 @@
 .logo
 {
   margin-left: -10%;
-
+}
 .barra_home{
   margin: -1%;
 }
@@ -29,8 +29,6 @@
 
 }
 
-  margin-left: 1%;
-}
 .busqueda{
   margin-left: 25%;
 }
@@ -94,9 +92,6 @@ ingresados en este formulario  para logearse como usuario o dueño de la tienda*
   color: white;
   text-decoration: underline;
 }
-<<<<<<< HEAD
->>>>>>> leandro
-=======
 
 .errores{
   display: none;
@@ -122,4 +117,3 @@ ingresados en este formulario  para logearse como usuario o dueño de la tienda*
   font-size: 18px;
   box-shadow: 7px 13px 37px rgb(0, 255, 242);
 }
->>>>>>> leandro
