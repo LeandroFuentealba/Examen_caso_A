@@ -12,23 +12,13 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <!--carpeta css-->
     <link rel="stylesheet" href="css/miestilo.css">
-    <script src="js/jquery-3.6.0.min.js"></script>
 </head>
 <body>
     <body class="fondo_del_formulario">
         <div class="container-fluid">
             <div clas="row">
                 <div class="col-1"> <a class="btn btn-dark" href="index.html">🏠Home</a></div>
-                <script>
-                    $(document).ready(function () {
-                        $.getJSON("https://mindicador.cl/api", function (datos) {
-                            $("#dolar").text("Valor US$:" + datos.dolar.valor);
-                            $("#uf").text("Valor UF$:" + datos.uf.valor);
-                        }).fail(function () {
-                            console.log("Watio!!!!!");
-                        });
-                    });
-                </script>
+
             </div>
     
             <div class="row">
