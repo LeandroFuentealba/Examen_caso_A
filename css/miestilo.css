@@ -117,7 +117,7 @@ box-shadow: 2px 2px 5px rgb(0, 0, 0)
 
   .imagen_fondo1 {
     height: 800px;
-    background-image: url("https://cdn.pixabay.com/photo/2017/02/20/18/03/cat-2083492_960_720.jpg");
+    background-color: rgb(32, 68, 99);
     background-size: cover;
     background-size: 100%;
     background-repeat: no-repeat;
@@ -127,7 +127,7 @@ box-shadow: 2px 2px 5px rgb(0, 0, 0)
 
   .imagen_fondo2 {
     height: 800px;
-    background-image: url("https://cdn.pixabay.com/photo/2018/03/06/03/57/jelly-carpet-ghz-3202485_960_720.jpg");
+    background-color: rgb(32, 68, 99);
     background-size: cover;
     background-size: 100%;
     background-repeat: no-repeat;
@@ -223,4 +223,10 @@ box-shadow: 2px 2px 5px rgb(0, 0, 0)
   font-size: 18px;
   box-shadow: 7px 13px 37px rgb(24, 196, 214, 1);
   padding-top: 10%;
+}
+#fondo_paginas{
+  background-color: rgb(32, 68, 99) ;
+}
+#fondo_paginas_mi_carrito{
+  background-color: rgb(91, 163, 225) ;
 }
