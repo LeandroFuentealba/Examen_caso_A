@@ -1,60 +1,102 @@
-   
-   .fondo_del_formulario {
-    background-color:#247dd5;
-    
+.barra_home{
+    margin: -1%;
+  }
+  .barra_animales{
+    margin-left: -1%;
+  }
+  .namvar{
+    background-color: rgb(38, 229, 229);
   }
   
-  .titulo_formulario{
+  .logo
+  {
+    margin-left: 1%;
+  }
+  .busqueda{
+    margin-left: 25%;
+  }
+  /*clases para el formulario
+  estas clases solo se utilizaran para los códigos 
+  ingresados en este formulario  para logearse como usuario o dueño de la tienda*/
+  
+  .fondo_del_formulario {
+    background-color: rgb(32, 68, 99);
+  }
+  
+  .titulo_formulario{ 
     text-align: center;
-    margin-top: 4%;
-    padding-right: 5%;
-  }
-  *{
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-     
+      margin-top: 4%;
+      padding-right: 5%;
   }
   
-  .form_register{
-   
-      background: #24303c;
-      padding: 30px;
-      margin: auto;
-      margin-top: 100px ;
-      border-radius: 4px;
-      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-      color: aliceblue;
-    }
-
-  .form_register h4{
-      font-size: 22;
-      margin-bottom: 20px;
-
+  *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
   }
-  .controls{
+  
+  .forma_registro{
+    background: #24303c;
+    padding: 30px;
+    margin: auto;
+    margin-top: 100px ;
+    border-radius: 4px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: rgb(97, 170, 233);
+    box-shadow: 7px 13px 37px rgb(255, 250, 250);
+  }
+  .forma_registro h4{
+    font-size: 22;
+    margin-bottom: 20px;
+  }
+  .campo{
       width: 100%;
       background: 24303c;
       padding: 10px;
       border-radius: 4px;
-      margin-bottom: 16px;
+      margin-bottom: 2px;
       border: 1px soild #1f53c5;
       font-family: 'calibri';
       font-size: 18px;
+      box-shadow: 7px 13px 37px rgb(24, 196, 214, 1);
+     
   }
-
-  .form-register p{
-      height: 40px;
-      text-align: center;
-      font-size: 18px;
-
+  .forma_registro p{
+    height: 40px;
+    text-align: center;
+    font-size: 18px;
+  
   }
-  .form-register a:hover{
-      color: white;
-      text-decoration: none;
-
+  .forma_registro a:hover{
+    color: white;
+    text-decoration: none;
   }
-  .form-register a:hover{
-      color: white;
-      text-decoration: underline;
+  .forma_registro a:hover{
+    color: white;
+    text-decoration: underline;
+  }
+  
+  .errores{
+    display: none;
+    color: rgb(225, 12, 12);
+    border: 1px soild #f30000;
+    box-shadow: 7px 13px 37px rgb(255, 0, 0);
+  }
+  
+  #mensaje2{
+    padding-top: -6%;
+    color: #1f53c5;
+    display: none;
+  }
+  
+  .label{
+    width: 100%;
+    background: 24303c;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 1px;
+    border: 100px soild #09fff3;
+    font-family: 'calibri';
+    font-size: 18px;
+    box-shadow: 7px 13px 37px rgb(0, 255, 242);
   }

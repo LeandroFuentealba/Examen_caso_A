@@ -133,3 +133,81 @@ box-shadow: 2px 2px 5px rgb(0, 0, 0)
     background-position: center center;
     background-attachment: fixed;
   }
+.label{
+  width: 100%;
+  background: 24303c;
+  padding: 10px;
+  border-radius: 4px;
+  margin-bottom: 1px;
+  border: 100px soild #09fff3;
+  font-family: 'calibri';
+  font-size: 18px;
+  box-shadow: 7px 13px 37px rgb(0, 255, 242);
+}
+
+/* estilos para las ventanas emergentes*/
+.overlay{
+  background: rgba(0,0,0,.3);
+  position: fixed;
+  top: 0;
+  bottom:  0;
+  left: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  visibility: hidden;
+}
+
+.popup{
+  background: #f8f8f8;
+  box-shadow: 0px 0px 5px 0px rgba(0,0,0,.3);
+  border-radius: 3px;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  padding: 20px;
+  text-align:center;
+  width: 600px;
+
+  transition: .3s ease all;
+  opacity: 0;
+}
+.popup .botn-cerrar-popup{
+  font-size: 16px;
+  line-height: 16px;
+  display: block;
+  text-align: right;
+  color: #bbbbbb;
+  transition: .3s ease all;
+}
+.popup h3{
+  font-size: 36px;
+  font-weight: 300;
+  margin-bottom: 40px;
+
+}
+.popup form .contenedor-inputs input{}
+
+.popup form .contenedor-inputs input{
+  width: 100%;
+  margin-bottom:  20px;
+  height: 52px;
+  line-height: 52px;
+  text-align: center;
+  border: 1px solid id #bbbbbb;
+
+}
+.popup form  .btn-submit {
+  padding: 0 20px;
+  height: 40px;
+  line-height: 40px;
+  border: none;
+  color: #fff;
+  background: #5e7de3;
+  border-radius: 3px;
+  cursor:  pointer;
+  transition: .3s ease all;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.popup form .btn-submit:hover{
+  background: rgba(94,125,227, .9);
+}
