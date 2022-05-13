@@ -41,6 +41,7 @@ ingresados en este formulario  para logearse como usuario o dueño de la tienda*
 }
 
 .titulo_formulario{ 
+  color: aliceblue;
   text-align: center;
     margin-top: 4%;
     padding-right: 5%;
@@ -210,4 +211,16 @@ box-shadow: 2px 2px 5px rgb(0, 0, 0)
 }
 .popup form .btn-submit:hover{
   background: rgba(94,125,227, .9);
+}
+.campo_soporte{
+  width: 100%;
+  background: 24303c;
+  padding: 10px;
+  border-radius: 4px;
+  margin-bottom: 2px;
+  border: 1px soild #1f53c5;
+  font-family: 'calibri';
+  font-size: 18px;
+  box-shadow: 7px 13px 37px rgb(24, 196, 214, 1);
+  padding-top: 10%;
 }
