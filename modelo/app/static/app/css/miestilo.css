@@ -1,0 +1,232 @@
+
+.barra_home{
+  margin: -1%;
+}
+.barra_animales{
+  margin-left: -1%;
+}
+.namvar{
+  background-color: rgb(38, 229, 229);
+}
+
+.logo
+{
+  margin-left: -10%;
+}
+.barra_home{
+  margin: -1%;
+}
+.barra_animales{
+  padding: -1%;
+}
+.namvar{
+  background-color: aqua;
+}
+
+.logo
+{
+  margin-left: -10%;
+
+}
+
+.busqueda{
+  margin-left: 25%;
+}
+/*clases para el formulario
+estas clases solo se utilizaran para los códigos 
+ingresados en este formulario  para logearse como usuario o dueño de la tienda*/
+
+.fondo_del_formulario {
+  background-color: rgb(32, 68, 99);
+}
+
+.titulo_formulario{ 
+  color: aliceblue;
+  text-align: center;
+    margin-top: 4%;
+    padding-right: 5%;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.forma_registro{
+  background: #24303c;
+  padding: 30px;
+  margin: auto;
+  margin-top: 100px ;
+  border-radius: 4px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: rgb(97, 170, 233);
+  box-shadow: 7px 13px 37px rgb(255, 250, 250);
+}
+.forma_registro h4{
+  font-size: 22;
+  margin-bottom: 20px;
+}
+.campo{
+    width: 100%;
+    background: 24303c;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 2px;
+    border: 1px soild #1f53c5;
+    font-family: 'calibri';
+    font-size: 18px;
+    box-shadow: 7px 13px 37px rgb(24, 196, 214, 1);
+   
+}
+.forma_registro p{
+  height: 40px;
+  text-align: center;
+  font-size: 18px;
+
+}
+.forma_registro a:hover{
+  color: white;
+  text-decoration: none;
+}
+.forma_registro a:hover{
+  color: white;
+  text-decoration: underline;
+}
+
+.imagen_fondo {
+  height: 800px;
+  background-image: url("https://t2.ea.ltmcdn.com/es/posts/1/3/2/como_hacer_feliz_a_tu_perro_24231_orig.jpg");
+  background-size: cover;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+}
+
+.quienessomos_fondo {
+padding-left: 25%;
+padding-right: 25%;
+
+}
+
+.fondo_sombra {
+box-shadow: 2px 2px 5px rgb(0, 0, 0)
+  
+  }
+
+  .imagen_fondo1 {
+    height: 800px;
+    background-color: rgb(32, 68, 99);
+    background-size: cover;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+  }
+
+  .imagen_fondo2 {
+    height: 800px;
+    background-color: rgb(32, 68, 99);
+    background-size: cover;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+  }
+.label{
+  width: 100%;
+  background: 24303c;
+  padding: 10px;
+  border-radius: 4px;
+  margin-bottom: 1px;
+  border: 100px soild #09fff3;
+  font-family: 'calibri';
+  font-size: 18px;
+  box-shadow: 7px 13px 37px rgb(0, 255, 242);
+}
+
+/* estilos para las ventanas emergentes*/
+.overlay{
+  background: rgba(0,0,0,.3);
+  position: fixed;
+  top: 0;
+  bottom:  0;
+  left: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  visibility: hidden;
+}
+
+.popup{
+  background: #f8f8f8;
+  box-shadow: 0px 0px 5px 0px rgba(0,0,0,.3);
+  border-radius: 3px;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  padding: 20px;
+  text-align:center;
+  width: 600px;
+
+  transition: .3s ease all;
+  opacity: 0;
+}
+.popup .botn-cerrar-popup{
+  font-size: 16px;
+  line-height: 16px;
+  display: block;
+  text-align: right;
+  color: #bbbbbb;
+  transition: .3s ease all;
+}
+.popup h3{
+  font-size: 36px;
+  font-weight: 300;
+  margin-bottom: 40px;
+
+}
+.popup form .contenedor-inputs input{}
+
+.popup form .contenedor-inputs input{
+  width: 100%;
+  margin-bottom:  20px;
+  height: 52px;
+  line-height: 52px;
+  text-align: center;
+  border: 1px solid id #bbbbbb;
+
+}
+.popup form  .btn-submit {
+  padding: 0 20px;
+  height: 40px;
+  line-height: 40px;
+  border: none;
+  color: #fff;
+  background: #5e7de3;
+  border-radius: 3px;
+  cursor:  pointer;
+  transition: .3s ease all;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.popup form .btn-submit:hover{
+  background: rgba(94,125,227, .9);
+}
+.campo_soporte{
+  width: 100%;
+  background: 24303c;
+  padding: 10px;
+  border-radius: 4px;
+  margin-bottom: 2px;
+  border: 1px soild #1f53c5;
+  font-family: 'calibri';
+  font-size: 18px;
+  box-shadow: 7px 13px 37px rgb(24, 196, 214, 1);
+  padding-top: 10%;
+}
+#fondo_paginas{
+  background-color: rgb(32, 68, 99) ;
+}
+#fondo_paginas_mi_carrito{
+  background-color: rgb(91, 163, 225) ;
+}

@@ -1,0 +1,47 @@
+{% extends 'app/base.html' %}
+
+{% load static %}
+
+{% block imagensuperior %}
+<div class="row ">
+    <div class="col-12">
+        <img src="{% static 'app/Img/perrioMejorado.svg'%}" style="max-width: 100%;">
+    </div>
+
+{% endblock %}
+{% load crispy_forms_tags %}
+{% block contenido %}
+
+
+
+
+<div class="container-fluid row" >
+    <div class=" row ">
+        <div class="col-sm-3">
+
+        </div>
+        <div class="col-sm-5 m-3 p-3 border shadow rounded" id="bglistado">
+            <div class="container mt-3">
+                <h4>Formulario soporte</h4>
+                <hr>
+                <form action="" method="POST" enctype="multipart/form-data">
+                    {% csrf_token %}
+                    {{ form|crispy }}
+        
+                    <input type="submit" value="Guardar" class="btn btn-success">
+                </form>
+                {{mensaje}}
+            </div>
+        </div>
+        <div class="col-sm-3">
+
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+    {% endblock %}

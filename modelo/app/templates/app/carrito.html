@@ -1,0 +1,57 @@
+
+{% extends 'app/base.html' %}
+{% load static %}
+{% load crispy_forms_tags%}
+
+{% block img %}
+<div class="">
+    <div class="col-12">
+        <img src="{% static 'app/Img/perrioMejorado.svg' %}" style="max-width: 100%;">
+    </div>
+</div>
+{% endblock %}
+{% block contenido %}
+
+<div class="container-fluid row" >
+    <div class="">
+        <div class="col-sm-1">
+
+        </div>
+        <div class="col-sm-12 m-3 p-3 border shadow rounded" id="bglistado">
+            <div class="container mt-3">
+                <h1>Carrito</h1>
+                <form action="" method="POST" enctype="multipart/form-data">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>Nombre producto</th>
+                            <th>Cantidad</th>
+                            <th>Precio</th>
+
+                            
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {% for car in carritos  %}
+                        <tr>
+                            <td>{{car.nomproduc}}</td>
+                            <td>{{car.candtidad}}</td>
+                            <td>{{car.precio}}</td>
+                            <td>
+                                <a href="{% url 'eliminarproductocarrito' car.id %}" class="btn btn-danger btn-sm" role="button">Eliminar Producto</a>
+                                <a href="{% url 'comprar' car.id  %}" class="btn btn-success btn-sm" role="button">Comprar</a>
+                            </td>
+                        </tr>
+                        {% endfor %}
+                    </tbody>
+                </table>
+                <h1>total: {{total}}</h1>
+            </div>
+        </div>
+        <div class="col-sm-1">
+
+        </div>
+    </div>
+</div>
+
+{% endblock%}

@@ -1,0 +1,58 @@
+{% extends 'app/base.html' %}
+{% load static %}
+
+{% block img %}
+<div class="">
+    <div class="col-12">
+        <img src="{% static 'app/Img/perrioMejorado.svg' %}" style="max-width: 100%;">
+    </div>
+</div>
+{% endblock %}
+
+{% block contenido %}
+
+    <div class="container-fluid row" >
+        <div class="">
+            <div class="col-sm-12 m-3 p-3 border shadow rounded" id="bglistado">
+                <div class="container mt-3">
+                    <h1>Lista de Productos</h1>
+                    <p><a href="{% url 'crearproductos' %}">Crear Productos</a></p>
+                    <div class="col-lg-12">
+                        <table class="table table-hover ">
+                            <thead>
+                                <tr>
+                                <th>id</th>
+                                <th>Nombre</th>
+                                <th>Precio</th>
+                                <th>Cantidad</th>
+                                <th>Categoria</th>
+                                <th>Imagen</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                {% for p in productos %}
+                                <tr>
+                                <td>{{p.id}}</td>
+                                <td>{{p.nombre}}</td>
+                                <td>{{p.precio}}</td>
+                                <td>{{p.cantidad}}</td>
+                                <td>{{p.categoria.nombre}}</td>
+                                <td>{{p.imagen}}</td>
+                                
+                                <td><a href="{% url 'modificarproductos' p.id %}" class="btn btn-warning btn-sm" role="button">Modificar</a>
+                                <a href="{% url 'eliminarproductos' p.id %}" class="btn btn-danger btn-sm" role="button">Eliminar</a>
+                                </td>
+                                </tr>
+                                {% endfor %}
+                            </tbody>
+                            </table>
+                            <h6>TOTAL REGISTROS: {{totalp}}</h6>
+                </div>
+            </div>
+            <div class="col-sm-1">
+
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock contenido %}

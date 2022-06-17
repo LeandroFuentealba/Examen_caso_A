@@ -1,0 +1,53 @@
+{% extends 'app/base.html' %}
+{% load static %}
+
+{% block img %}
+<div class="">
+    <div class="col-12">
+        <img src="{% static 'app/Img/perrioMejorado.svg' %}" style="max-width: 100%;">
+    </div>
+</div>
+{% endblock %}
+
+{% block contenido %}
+
+    <div class="container-fluid row" >
+        <div class="">
+            <div class="col-sm-12 m-3 p-3 border shadow rounded" id="bglistado">
+                <div class="container mt-3">
+                    <h1>Lista de Pedidos</h1>
+                    <div class="col-lg-12">
+                        <table class="table table-hover ">
+                            <thead>
+                                <tr>
+                                <th>id</th>
+                                <th>cliente</th>
+                                <th>Fecha</th>
+                                <th>Estado</th>
+                                <th>Dirección</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                {% for p in pedidos %}
+                                <tr>
+                                <td>{{p.id}}</td>
+                                <td>{{p.nomusuario}}</td>
+                                <td>{{p.fecha}}</td>
+                                <td>{{p.estado}}</td>
+                                <td>{{p.direccion}}</td>
+                                <td>
+                                    <a href="{% url 'modificarpedidos' p.id %}" class="btn btn-warning btn-sm" role="button">Modificar</a>
+                                </td>
+                                </tr>
+                                {% endfor %}
+                            </tbody>
+                            </table>
+                </div>
+            </div>
+            <div class="col-sm-1">
+
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock contenido %}

@@ -1,0 +1,53 @@
+{% extends 'app/base.html' %}
+{% load static %}
+
+{% block img %}
+<div class="">
+    <div class="col-12">
+        <img src="{% static 'app/Img/perrioMejorado.svg' %}" style="max-width: 100%;">
+    </div>
+</div>
+{% endblock %}
+
+{% block contenido %}
+
+    <div class="container-fluid row" >
+        <div class="">
+            <div class="col-sm-12 m-3 p-3 border shadow rounded" id="bglistado">
+                <div class="container mt-3">
+                    <h1>Lista de Soporte</h1>
+                    <div class="col-lg-12">
+                        <table class="table table-hover ">
+                            <thead>
+                                <tr>
+                                <th>id</th>
+                                <th>Nombre</th>
+                                <th>correo</th>
+                                <th>asunto</th>
+                                <th>Mensaje</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                {% for s in soporte %}
+                                <tr>
+                                <td>{{s.id}}</td>
+                                <td>{{s.nombre}}</td>
+                                <td>{{s.correo}}</td>
+                                <td>{{s.asunto}}</td>
+                                <td>{{s.mensaje}}</td>
+                                <td>
+                                    <a href="{% url 'eliminarsoporte' s.id %}" class="btn btn-danger btn-sm" role="button">Eliminar</a>
+                                </td>
+                                </tr>
+                                {% endfor %}
+                            </tbody>
+                            </table>
+                </div>
+            </div>
+            <div class="col-sm-1">
+
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock contenido %}
