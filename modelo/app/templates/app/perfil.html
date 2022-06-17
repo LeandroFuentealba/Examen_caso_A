@@ -29,7 +29,7 @@
             {% endfor %}
             <form action="" method="post">
                 <div><a href="{% url 'cambiarpassword' %}" button type="button" class="btn btn-warning"></button>Cambiar contraseña</a></div>
-                <h4 class="text-center">listado de pedidos: </h4>
+                <h4 class="text-center">Listado de Pedidos: </h4>
 
 
                     <table class="table">
@@ -50,7 +50,7 @@
                                 <td>{{ped.direccion}}</td>
                                 <td>
                                 <td>
-                                    <div><a href="{% url 'seguimiento'   %}" button type="button" class="btn btn-success"></button>Seguimiento de productos</a></div>
+                                    <div><a href="{% url 'seguimiento' ped.id   %}" button type="button" class="btn btn-success"></button>Seguimiento de productos</a></div>
                                 </td>
                             </tr>
                             {% endfor %}

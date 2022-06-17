@@ -1,0 +1,50 @@
+{% extends 'app/base.html' %}
+{% load static %}
+{% load crispy_forms_tags%}
+
+{% block img %}
+<div class="">
+    <div class="col-12">
+        <img src="{% static 'app/Img/perrioMejorado.svg' %}" style="max-width: 100%;">
+    </div>
+</div>
+{% endblock %}
+{% block contenido %}
+
+<div class="container-fluid">
+    <div class="row row-cols-1 row-cols-md-3 g-4 pt-3">
+        <div class="col">
+            <div class="card">
+                <img src="{% static 'app/Img/collar.png' %}" class="card-img-top" alt="collar de perro">
+            </div>
+        
+            
+            {% if prep %}
+            <div class="progress">
+                <div class="progress-bar" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+              <p class="text-center text-white">Su paquete está en proceso.</p></div></div>
+              {% endif %}
+              {% if cam %}
+              <div class="progress">
+                  <div class="progress-bar" role="progressbar" style="width: 60%" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+                <p class="text-center text-white">Su paquete está en reparto.</p></div></div>
+                {% endif %}
+                {% if entre %}
+                <div class="progress">
+                    <div class="progress-bar" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+                  <p class="text-center text-white">Su paquete está entregado.</p></div></div>
+                  {% endif %}    
+        
+        </div>
+        
+    </div>
+    
+</div>
+
+
+
+
+{% endblock%}

@@ -313,13 +313,33 @@ def modificarpedidos(request,id):
         if form.is_valid():
             datos=form.cleaned_data
             pedi=Pedido.objects.get(id=id)
-            pedi.estado=datos.get("Estado")
+            pedi.estado=datos.get("estado")
             pedi.save()
-            return redirect(to="modenvios")
+            return redirect(to="listapedidosadm")
       
             
     return render(request,"app/modificarestado.html",contexto)
 
+
+@login_required()
+def seguimiento(request,id):
+    pedido=get_object_or_404(Pedido,id=id)
+    if pedido.estado==1:
+        contexto={
+            "prep":"Preparación"
+        }
+    elif pedido.estado==2:
+         contexto={
+            "cam":"En camino"
+        }
+    else:
+         contexto={
+            "entre":"Entregado"
+        }
+ 
+    return render(request,"app/seguimiento1.html",contexto)
+
+    
 #soporte
 def soporte(request):
     data = {
@@ -388,9 +408,20 @@ def comprar(request,id):
     pedido.estado=1
     pedido.direccion="laraquete 900"
     pedido.save()
+    print(pedido.id)
+    #carrito=Carrito()
 
-    carrito=get_object_or_404(Carrito,id=id)
-    carrito.delete()
+
+    listacompra=Carrito.objects.filter(idusuario=request.user.username)
+    print(listacompra)
+    for registro in listacompra:
+        det=Detalle()
+        det.producto=Producto.objects.get(id=registro.idprod)
+        det.cantidad=registro.candtidad
+        det.pedido=Pedido.objects.get(id=pedido.id)
+        det.save()
+
+    Carrito.objects.filter(idusuario=request.user.username).delete()
     return redirect(to="perfil")
 @permission_required('change_soporte')
 def datoseg(request,id):
@@ -403,6 +434,11 @@ def datoseg(request,id):
     detalle.save()
     return redirect(to="index")
 
-@login_required()
-def seguimiento(request):
-    return render(request,"app/seguimiento.html")
+def preparacion(request):
+    return render(request,"app/seguimiento1.html")
+def encamino(request):
+    return render(request,"app/seguimiento2.html")
+def entregado(request):
+    return render(request,"app/seguimiento3.html")
+#def seguimiento(request):
+#    return render(request,"app/seguimiento.html")
