@@ -1,0 +1,69 @@
+{% extends 'app/base.html' %}
+{% load static %}
+{% load crispy_forms_tags %}
+
+{% block img %}
+<div class="">
+    <div class="col-12">
+        <img src="{% static 'app/Img/perrioMejorado.svg' %}" style="max-width: 100%;">
+    </div>
+</div>
+{% endblock %}
+
+{% block contenido %}
+
+<div class="container-fluid row" >
+    <div class=" row ">
+        <div class="col-sm-3">
+
+        </div>
+        <div class="col-sm-5 m-3 p-3 border shadow rounded" id="bglistado">
+            <h1 class="text-center">👤Perfil de Usuario</h1>
+            <h4>Nombre de Usuario: {{user.username}}</h4>
+            {% for per in perfil  %}
+            <div class="">
+                <h4>Nombre: {{per.nombre}}</h4>
+                <h4>Apellido: {{per.apellido}}</h4>
+                <h4>Correo: {{per.mail}}</h4>
+            </div>
+            {% endfor %}
+            <form action="" method="post">
+                <div><a href="{% url 'cambiarpassword' %}" button type="button" class="btn btn-warning"></button>Cambiar contraseña</a></div>
+                <h4 class="text-center">listado de pedidos: </h4>
+
+
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>fecha</th>
+                                <th>estado</th>
+                                <th>dirección</th>
+                                
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {%for ped in pedido%}
+                            <tr>
+
+                                <td>{{ped.fecha}}</td>
+                                <td>{{ped.estado}}</td>
+                                <td>{{ped.direccion}}</td>
+                                <td>
+                                <td>
+                                    <div><a href="{% url 'seguimiento'   %}" button type="button" class="btn btn-success"></button>Seguimiento de productos</a></div>
+                                </td>
+                            </tr>
+                            {% endfor %}
+                        </tbody>
+                    </table>
+
+
+        </div>
+        <div class="col-sm-3">
+
+        </div>
+    </div>
+</div>
+
+
+{% endblock contenido %}

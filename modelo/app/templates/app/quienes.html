@@ -1,0 +1,38 @@
+{% extends 'app/base.html' %}
+{% load static %}
+
+{% block img %}
+<div class="">
+    <div class="col-12">
+        <img src="{% static 'app/Img/perrioMejorado.svg' %}" style="max-width: 100%;">
+    </div>
+</div>
+{% endblock %}
+{% block contenido %}
+
+<div class="container fondo_sombra p-5 my-5 bg-dark text-white">
+    <h1 class="text-center"> ¿Quienes Somos?
+        <h6 class="text-center quienessomos_fondo">Somos una tienda dedicada a la atención de los peluditos de la
+            casa. Ofrecemos venta de alimentos, accesorios y productos de higiene para mascotas.
+
+            Descubre la mayor variedad de productos, alimentos y accesorios disponibles para ti.
+
+            Ademas permitimos la suscripción a nuetra tienda con un aporte voluntario a una fundación sin fines de
+            lucro, como agradecimiento a las buenas costumbres te descontaremos el 5% en tus compras
+
+        </h6>
+
+        <div class="d-grid">
+
+            <a class="d-grid quienessomos_fondo" href="{% url 'perfil'%}"><button type="button"
+                    class="btn btn-success btn-block">Suscribirse</button></a>
+
+
+        </div>
+    </div>
+
+</h4>
+</div>
+
+
+{% endblock%}

@@ -1,0 +1,29 @@
+{% extends 'app/base.html' %}
+{% load static %}
+
+{% block img %}
+<div class="">
+    <div class="col-12">
+        <img src="{% static 'app/Img/hamster.png' %}" width="1920"  style="max-width: 100%;">
+    </div>
+</div>
+{% endblock %}
+{% block contenido %}
+
+<div class="container-fluid">
+    <div class="row row-cols-1 row-cols-md-3 g-4 pt-3">
+        {% for roedor in roedores  %}
+        <div class="col">
+            <div class="card">
+                <img src="{{roedor.imagen.url}}" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">{{roedor.nombre}}</h5>
+                    <p class="card-text">Precio: ${{roedor.precio}}</p>
+                </div>
+            </div>
+            <div class="mt-1"><a href="{% url 'cart_add' roedor.id roedor.precio %}"><button type="button" class="btn btn-info">Añadir al carrito</button></div></a>
+        </div>
+        {% endfor %}
+    </div>
+</div>
+{% endblock%}

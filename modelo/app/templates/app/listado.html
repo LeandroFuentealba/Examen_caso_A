@@ -1,0 +1,61 @@
+{% extends 'app/base.html' %}
+{% load static %}
+
+{% block img %}
+<div class="">
+    <div class="col-12">
+        <img src="{% static 'app/Img/perrioMejorado.svg' %}" style="max-width: 100%;">
+    </div>
+</div>
+{% endblock %}
+{% block contenido %}
+
+<div class="container-fluid row" >
+    <div class="">
+        <div class="col-sm-1">
+
+        </div>
+        <div class="col-sm-12 m-3 p-3 border shadow rounded" id="bglistado">
+            <div class="container mt-3">
+                <h1>Registro de Personas</h1>
+                <p><a href="{% url 'crear'%}">Crear Persona</a></p>
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>Nombre usuario</th>
+                            <th>rut</th>
+                            <th>Nombre</th>
+                            <th>Apellido</th>
+                            <th>Email</th>
+                            <th>suscriptor</th>
+                            
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {% for p in cliente  %}
+                        <tr>
+                            <td>{{p.nombreusuario}}</td>
+                            <td>{{p.rut}}</td>
+                            <td>{{p.nombre}}</td>
+                            <td>{{p.apellido}}</td>
+                            <td>{{p.mail}}</td>
+                            <th>{{p.suscriptor}}</th>
+                            <td>
+                                <a href="{% url 'modificar' p.nombreusuario %}" class="btn btn-warning btn-sm" role="button">Modificar</a>
+                                <a href="{% url 'eliminar' p.nombreusuario %}" class="btn btn-danger btn-sm" role="button">Eliminar</a>
+                            </td>
+                        </tr>
+                        {% endfor %}
+                    </tbody>
+                </table>
+                <h6>TOTAL REGISTROS: {{total}}</h6>
+
+            </div>
+        </div>
+        <div class="col-sm-1">
+
+        </div>
+    </div>
+</div>
+
+{% endblock%}

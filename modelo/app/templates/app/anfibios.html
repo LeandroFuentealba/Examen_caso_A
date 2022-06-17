@@ -1,0 +1,30 @@
+{% extends 'app/base.html' %}
+{% load static %}
+
+{% block img %}
+<div class="">
+    <div class="col-12">
+        <img src="{% static 'app/Img/pez.png' %}"  width="1920" style="max-width: 100%;">
+    </div>
+</div>
+{% endblock %}
+{% block contenido %}
+
+<div class="container-fluid">
+    <div class="row row-cols-1 row-cols-md-3 g-4 pt-3">
+        {% for anfibio in anfibios  %}
+        <div class="col">
+            <div class="card">
+                <img src="{{anfibio.imagen.url}}" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">{{anfibio.nombre}}</h5>
+                    <p class="card-text">Precio: ${{anfibio.precio}}</p>
+                </div>
+            </div>
+            <div class="mt-1"><a href="{% url 'cart_add' anfibio.id anfibio.precio %}"><button type="button" class="btn btn-info">Añadir al Carrito</button></div></a>
+        </div>
+        {% endfor %}
+    </div>
+</div>
+
+{% endblock%}
