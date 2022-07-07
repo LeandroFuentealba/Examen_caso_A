@@ -1,7 +1,19 @@
+from django.urls import path
+from django.urls.conf import path
+
+from django import urls
+from django.db import router
 from django.urls import include, path
+
+from app.models import Producto
+from .views import *
+from rest_framework import routers
 
 from app.views import preparacion,encamino,entregado,eliminarsoporte,listadosoporte,soporte,modificarpedidos,listapedidosadm,datoseg,seguimiento,comprar,eliminarproductocarrito,cambiarpassword,registro,perfilusuario,crearperfil,index,perro,roedor,gatos,aves,anfibios,quienes,listado,crear,modificar,eliminar,perfil,listaproductos,modificarproductos,eliminarproductos,crearproductos,cart_add,cantidad,carrito
 
+router = routers.DefaultRouter()
+router.register('Productos', ProductoViewSet)
+router.register('Pedidos', PedidoViewSet)
 urlpatterns = [
     path('', index, name='index'),
     path('roedor', roedor, name='roedor'),
@@ -41,6 +53,8 @@ urlpatterns = [
     path('entregado',entregado,name="entregado"),
     
 
-    path('crearperfil',crearperfil,name="crearperfil")
+    path('crearperfil',crearperfil,name="crearperfil"),
+
+    path('api/', include(router.urls)),
     
 ]

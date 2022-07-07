@@ -7,6 +7,10 @@ from django.contrib.auth.decorators import login_required,permission_required
 
 from app.models import Cliente, Carrito, Producto, Pedido, Detalle, Soporte
 
+#rest framework
+from rest_framework import viewsets
+from .serializers import *
+
 
 # Create your views here.
 def index (request): 
@@ -442,3 +446,14 @@ def entregado(request):
     return render(request,"app/seguimiento3.html")
 #def seguimiento(request):
 #    return render(request,"app/seguimiento.html")
+
+
+#rest_framework
+
+class ProductoViewSet(viewsets.ModelViewSet):
+    queryset = Producto.objects.all()
+    serializer_class = ProductoSerializer
+
+class PedidoViewSet(viewsets.ModelViewSet):
+    queryset = Pedido.objects.all()
+    serializer_class = PedidoSerializer
